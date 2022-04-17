@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz1">
         <activity
+            android:name=".q8"
+            android:exported="false" />
+        <activity
+            android:name=".q7"
+            android:exported="false" />
+        <activity
             android:name=".q6"
             android:exported="false" />
         <activity

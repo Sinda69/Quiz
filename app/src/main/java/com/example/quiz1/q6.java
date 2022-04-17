@@ -35,9 +35,17 @@ public class q6 extends AppCompatActivity {
                     rg1.setTextColor(Color.WHITE);   }
                 else {rg1.setBackgroundResource(R.drawable.green);
                     rg1.setTextColor(Color.WHITE);}
-                Intent q5 = new Intent(q6.this, q5.class);
-                q5.putExtra("score",score);
-                startActivity(q5);
+                if(score==0)
+                {Intent q7 = new Intent(q6.this, q7.class);
+                q7.putExtra("score",score);
+                startActivity(q7);}
+                else if(score==1|score==2|score==3)
+                {Intent q8 = new Intent(q6.this, q8.class);
+                    q8.putExtra("score",score);
+                    startActivity(q8);}
+                else {Intent q5 = new Intent(q6.this, q5.class);
+                    q5.putExtra("score",score);
+                    startActivity(q5);}
 
             }
         });
